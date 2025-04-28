@@ -75,7 +75,11 @@ const generateDailyData = () => {
 
 const mockData = generateDailyData();
 
-export default function PortfolioChart() {
+interface PortfolioChartProps {
+  timeRange: string;
+}
+
+export default function PortfolioChart({ timeRange }: PortfolioChartProps) {
   const chartContainerRef = useRef<HTMLDivElement>(null);
   const [selectedTimeframe, setSelectedTimeframe] = useState('1D');
   const chartRef = useRef<IChartApi | null>(null);
