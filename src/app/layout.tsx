@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Monetao",
   description: "AI-powered financial dashboard for stock tracking, market analysis, and portfolio management.",
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({
